@@ -16,6 +16,7 @@ import { ConfigModule } from '@nestjs/config';
       username: process.env.PG_USER,
       password: process.env.PG_PASSWORD,
       database: process.env.PG_DB,
+      url: process.env.DATABASE_URL, 
       autoLoadEntities: true,
       synchronize: false,
     }),
