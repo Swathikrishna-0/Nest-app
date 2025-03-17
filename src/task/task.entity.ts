@@ -25,4 +25,7 @@ export class Task {
 
   @Column({ default: true })
   isActive: boolean;
+
+  @Column({ nullable: true })  
+  details: string;
 }
